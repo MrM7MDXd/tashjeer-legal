@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Account deletion instructions for the Tashjeer app">
+  <title>Delete Account - Tashjeer | حذف الحساب - تشجير</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+      background: #F4EFE6;
+      color: #1A1A1A;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      background: linear-gradient(135deg, #0F4D2A 0%, #1E8449 100%);
+      color: #FFF;
+      padding: 48px 24px 56px;
+      text-align: center;
+      border-bottom: 4px solid #D4A017;
+    }
+    header h1 { margin: 0; font-size: 32px; font-weight: 800; }
+    header .subtitle { margin-top: 8px; font-size: 16px; color: #F4C842; font-weight: 600; }
+    .lang-switcher {
+      display: flex; gap: 12px; justify-content: center; margin-top: 20px;
+    }
+    .lang-switcher button {
+      background: rgba(255,255,255,0.15); color: #FFF;
+      border: 1.5px solid rgba(255,255,255,0.35);
+      padding: 8px 20px; border-radius: 24px;
+      font-family: inherit; font-size: 14px; font-weight: 700;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .lang-switcher button:hover { background: rgba(255,255,255,0.25); }
+    .lang-switcher button.active {
+      background: #D4A017; border-color: #D4A017; color: #0F4D2A;
+    }
+    section {
+      background: #FFF; border-radius: 12px;
+      padding: 24px 28px; margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      color: #0F4D2A; font-size: 19px; font-weight: 800; margin: 0 0 12px;
+    }
+    section p, section li { font-size: 15px; color: #333; margin: 0 0 8px; }
+    section ul { margin: 8px 0 0; padding-right: 20px; padding-left: 20px; }
+    section li { margin-bottom: 6px; }
+    .intro {
+      background: linear-gradient(135deg, #FFFFFF 0%, #F4EFE6 100%);
+      border-right: 4px solid #D4A017;
+    }
+    .danger-banner {
+      background: #FCE4E4;
+      border: 1.5px solid #C0392B;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      color: #7A1818;
+    }
+    .danger-banner strong { color: #C0392B; }
+    .step-num {
+      display: inline-block;
+      background: #0F4D2A;
+      color: #FFF;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-weight: 800;
+      margin-left: 8px;
+    }
+    .email-link {
+      display: inline-block;
+      direction: ltr;
+      font-family: 'Courier New', monospace;
+      background: #F4EFE6;
+      padding: 4px 12px;
+      border-radius: 6px;
+      color: #0F4D2A;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .email-link:hover { background: #E5DDD0; }
+    footer {
+      text-align: center; padding: 32px 16px;
+      color: #666; font-size: 13px;
+    }
+    footer a { color: #0F4D2A; font-weight: 700; }
+    [lang="en"] { direction: ltr; text-align: left; display: none; }
+    [lang="en"] .intro { border-right: none; border-left: 4px solid #D4A017; }
+    [lang="en"] .step-num { margin-left: 0; margin-right: 8px; }
+    body.lang-en [lang="ar"] { display: none; }
+    body.lang-en [lang="en"] { display: block; }
+    body.lang-en { direction: ltr; }
+  </style>
+</head>
+<body class="lang-ar">
+
+<header>
+  <h1>🌳 تشجير | Tashjeer</h1>
+  <div class="subtitle" lang="ar">حذف الحساب</div>
+  <div class="subtitle" lang="en">Account Deletion</div>
+  <div class="lang-switcher">
+    <button class="active" onclick="setLang('ar')">العربية</button>
+    <button onclick="setLang('en')">English</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ============== ARABIC ============== -->
+  <div lang="ar">
+
+    <section class="intro">
+      <h2>طلب حذف الحساب</h2>
+      <p>إذا كنت ترغب في حذف حسابك في تطبيق <strong>تشجير</strong> وجميع البيانات المرتبطة به، يمكنك طلب ذلك في أي وقت باتباع الخطوات التالية.</p>
+    </section>
+
+    <section>
+      <h2>كيف تطلب حذف حسابك</h2>
+      <p><span class="step-num">1</span> أرسل بريداً إلكترونياً إلى:</p>
+      <p style="margin: 12px 0;"><a class="email-link" href="mailto:tashjeer.iq@gmail.com?subject=طلب حذف حساب&body=أرجو حذف حسابي وجميع بياناتي المرتبطة به.%0A%0Aالبريد الإلكتروني المسجَّل به حسابي:">tashjeer.iq@gmail.com</a></p>
+      <p><span class="step-num">2</span> اكتب في عنوان البريد: <strong>طلب حذف حساب</strong></p>
+      <p><span class="step-num">3</span> اكتب في النص: البريد الإلكتروني المسجَّل به حسابك.</p>
+      <p><span class="step-num">4</span> سنرد عليك بتأكيد طلب الحذف خلال ٤٨ ساعة، ثم ننفذ الحذف خلال <strong>٣٠ يوماً</strong>.</p>
+    </section>
+
+    <section>
+      <h2>ما الذي يُحذف؟</h2>
+      <p>عند حذف حسابك، سنحذف بشكل دائم:</p>
+      <ul>
+        <li>بريدك الإلكتروني المسجَّل</li>
+        <li>اسم العرض الذي اخترته</li>
+        <li>كلمة المرور المشفّرة</li>
+        <li>سجل عمليات السقي وصور المتابعة</li>
+        <li>قائمة المتابعين والشهادات والحملات التي انضممت إليها</li>
+        <li>نقاطك وموقعك في قائمة المتصدرين</li>
+        <li>أي ملاحظات شخصية قمت بحفظها</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>ما الذي يبقى؟</h2>
+      <div class="danger-banner">
+        <p><strong>الأشجار التي زرعتها تبقى مرئية على الخريطة</strong> دون اسمك أو معلوماتك الشخصية. هذا لأن كل شجرة تمثل إنجازاً مجتمعياً ومساهمة في الهدف الوطني (مليون شجرة).</p>
+        <p style="margin-top: 8px;">إذا كنت ترغب أيضاً في إزالة شجرة معينة من الخريطة، يرجى ذكر ذلك في بريد الطلب.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>المدة الزمنية للحذف</h2>
+      <ul>
+        <li><strong>خلال ٤٨ ساعة:</strong> نؤكد استلام طلبك بالبريد الإلكتروني.</li>
+        <li><strong>خلال ٣٠ يوماً:</strong> يتم حذف جميع بياناتك من قواعد بياناتنا.</li>
+        <li><strong>خلال ٩٠ يوماً:</strong> يتم حذف بياناتك من نسخ النسخ الاحتياطية لخوادم Google.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>هل لديك سؤال؟</h2>
+      <p>لأي استفسار آخر حول الخصوصية أو حذف البيانات:</p>
+      <p><a class="email-link" href="mailto:tashjeer.iq@gmail.com">tashjeer.iq@gmail.com</a></p>
+    </section>
+
+  </div>
+
+
+  <!-- ============== ENGLISH ============== -->
+  <div lang="en">
+
+    <section class="intro">
+      <h2>Request Account Deletion</h2>
+      <p>If you want to delete your <strong>Tashjeer</strong> account and all associated data, you can request this at any time by following the steps below.</p>
+    </section>
+
+    <section>
+      <h2>How to Request Account Deletion</h2>
+      <p><span class="step-num">1</span> Send an email to:</p>
+      <p style="margin: 12px 0;"><a class="email-link" href="mailto:tashjeer.iq@gmail.com?subject=Account Deletion Request&body=Please delete my account and all associated data.%0A%0AMy registered email:">tashjeer.iq@gmail.com</a></p>
+      <p><span class="step-num">2</span> Subject line: <strong>Account Deletion Request</strong></p>
+      <p><span class="step-num">3</span> In the body, include the email address registered to your account.</p>
+      <p><span class="step-num">4</span> We will confirm receipt within 48 hours and complete the deletion within <strong>30 days</strong>.</p>
+    </section>
+
+    <section>
+      <h2>What Gets Deleted</h2>
+      <p>When you delete your account, we permanently remove:</p>
+      <ul>
+        <li>Your registered email address</li>
+        <li>Your chosen display name</li>
+        <li>Your encrypted password</li>
+        <li>Watering logs and follow-up photos</li>
+        <li>Your followers, vouches, and campaign memberships</li>
+        <li>Your points and leaderboard position</li>
+        <li>Any personal notes you saved</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Stays</h2>
+      <div class="danger-banner">
+        <p><strong>Trees you have planted remain visible on the map</strong> without your name or personal information attached. This is because each tree represents a community achievement and a contribution to our national goal of planting 1 million trees in Iraq.</p>
+        <p style="margin-top: 8px;">If you also want a specific tree removed from the map, please mention this in your request email.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Deletion Timeline</h2>
+      <ul>
+        <li><strong>Within 48 hours:</strong> We confirm receipt of your request via email.</li>
+        <li><strong>Within 30 days:</strong> All your data is removed from our active databases.</li>
+        <li><strong>Within 90 days:</strong> Data is purged from Google's backup snapshots.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Questions?</h2>
+      <p>For any other privacy or data deletion inquiries:</p>
+      <p><a class="email-link" href="mailto:tashjeer.iq@gmail.com">tashjeer.iq@gmail.com</a></p>
+    </section>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Tashjeer | تشجير — A community initiative to plant 1 million trees in Iraq.</p>
+  <p><a href="privacy.html">Privacy Policy</a> · <a href="mailto:tashjeer.iq@gmail.com">tashjeer.iq@gmail.com</a></p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.classList.remove('lang-ar', 'lang-en');
+    document.body.classList.add('lang-' + lang);
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.querySelectorAll('.lang-switcher button').forEach((b, i) => {
+      b.classList.toggle('active', (i === 0 && lang === 'ar') || (i === 1 && lang === 'en'));
+    });
+  }
+</script>
+
+</body>
+</html>
